@@ -14,12 +14,12 @@ const db = new Sequelize(
       timestamps: true,
     },
     pool: {
-      max: 10,
+      max: 20,
       min: 0,
       acquire: 30000,
       idle: 10000,
     },
-    operatorsAliases: false,
+    operatorsAliases: 0,
   }
 );
 
